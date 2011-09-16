@@ -20,7 +20,7 @@ TODO
 
 Lots.
 
-Cleanup web UI.
-Add bayesian classification system.
-Switch to browser based OAuth logic for user (for "hosted" solution)
-Etc.
+* Cleanup web UI.
+* Add bayesian classification system.
+* Switch to browser based OAuth logic for user (for "hosted" solution)
+* Etc.
