@@ -1,0 +1,7 @@
+<ul>
+<% for t in @tweets %>
+  <li><%= t.tweet_text.gsub /((https?:\/\/|www\.)([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/, %Q{<a href="\\1">\\1</a>}
+ %>
+    <br>From: <%= t.screen_name %> <a href="https://twitter.com/#!/<%= t.screen_name %>/status/<%= t.tweet_id %>">View Tweet</a></li>
+<% end %>
+</ul>
