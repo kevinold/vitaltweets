@@ -1,5 +1,5 @@
 desc 'Run a development server.'
-task :dev do
+task :server do
   sh 'shotgun -Ilib -p 4567 app.rb'
 end
 
