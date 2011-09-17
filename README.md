@@ -9,8 +9,7 @@ Quick Start
 ---------
 
     bundle install
-    edit config/twitter.yml with config data from dev.twitter.com
-    edit bin/capturetweets.rb to adjust INCLUDE_KEYWORDS
+    edit config/twitter.yml - Update config data from dev.twitter.com and include and exlude keywords
     run bin/capturetweets.rb # or rake tweets
     rake server #launch sinatra app to view captured tweets
     visit localhost:4567

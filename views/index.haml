@@ -1,6 +1,7 @@
 %ul
   - for t in @tweets
     %li
+      = linkify_and_bold(t.tweet_text)
       = succeed "From:" do
         %br/
       = t.screen_name

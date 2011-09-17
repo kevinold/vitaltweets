@@ -2,3 +2,10 @@ consumer_key: ''
 consumer_secret: ''
 oauth_token: ''
 oauth_token_secret: ''
+exclude_keywords:
+  - titans
+  - football
+include_keywords:
+  - rails
+  - ruby
+  - coffee
