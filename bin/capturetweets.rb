@@ -34,6 +34,10 @@ CLIENT.home_timeline.each do |t|
   next if Regexp.union(EXCLUDE_KEYWORDS) =~ tweet_text
 
   if (tweet_text.match(INCLUDE_REGEXP))
+
+    # linkify links in tweet
+    tweet_text = tweet_text.gsub /((https?:\/\/|www\.)([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/, %Q{<a href="\\1">\\1</a>}
+
     if (DEBUG)
       puts tweet_id, tweet_text, screen_name
       pp t 
